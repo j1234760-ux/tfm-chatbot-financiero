@@ -1,0 +1,33 @@
+# ============================================================
+# TFM: Chatbot de educación financiera basado en IA generativa
+# requirements.txt — dependencias del proyecto
+# Python 3.11 recomendado
+# Instalar con: pip install -r requirements.txt
+# ============================================================
+
+# --- Interfaz web ---
+streamlit>=1.35.0
+
+# --- LangChain: orquestación RAG ---
+langchain>=0.2.0
+langchain-community>=0.2.0       # Integraciones: FAISS, document loaders
+langchain-openai>=0.1.0          # Wrapper para la API de OpenAI
+langchain-huggingface>=0.0.3     # Integración HuggingFace actualizada
+
+# --- Base vectorial local ---
+faiss-cpu>=1.8.0                 # Índice FAISS (CPU)
+
+# --- Embeddings multilingües ---
+sentence-transformers>=3.0.0     # Modelo: paraphrase-multilingual-MiniLM-L12-v2
+
+# --- Lectura de PDFs ---
+pypdf>=4.0.0                     # Extracción de texto de archivos PDF
+
+# --- API de OpenAI ---
+openai>=1.30.0                   # Cliente oficial de la API
+
+# --- Variables de entorno ---
+python-dotenv>=1.0.0             # Carga el archivo .env en el entorno
+
+# --- Utilidades ---
+tiktoken>=0.7.0                  # Conteo de tokens (usado por LangChain internamente)

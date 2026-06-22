@@ -1,0 +1,27 @@
+# Variables de entorno reales (nunca subir al repositorio)
+.env
+
+# Índice FAISS generado localmente (puede pesar varios cientos de MB)
+data/vectorstore/*
+!data/vectorstore/.gitkeep
+
+# Entorno virtual
+venv/
+.venv/
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Caché de sentence-transformers y HuggingFace
+.cache/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
